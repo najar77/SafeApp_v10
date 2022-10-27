@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane cache="true" prefHeight="339.0" prefWidth="600.0" style="-fx-background-image: url('file:g4.gif');" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.storagePage">
+   <children>
+      <Button fx:id="backToMain" layoutX="26.0" layoutY="280.0" mnemonicParsing="false" onAction="#mainP" prefHeight="25.0" prefWidth="49.0" text="Back" />
+      <Button fx:id="exit" layoutX="525.0" layoutY="280.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="49.0" text="Close" />
+      <Button fx:id="move" layoutX="44.0" layoutY="76.0" mnemonicParsing="false" onAction="#main1" text="Move Image" />
+      <Button fx:id="open_folder" layoutX="473.0" layoutY="76.0" mnemonicParsing="false" onAction="#openFolder" prefHeight="25.0" prefWidth="83.0" text="Open folder" />
+      <MenuBar fx:id="menubar" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #F5EBEB; -fx-text-fill: white;">
+         <menus>
+            <Menu mnemonicParsing="false" style="-fx-text-fill: white;" text="File">
+               <items>
+                  <MenuItem fx:id="acset" mnemonicParsing="false" onAction="#mb" text="Account Setup" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#infoF" text="Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#contactF" text="Contact Us" />
+                  <MenuItem mnemonicParsing="false" onAction="#aboutF" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

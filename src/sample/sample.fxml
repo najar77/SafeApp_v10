@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane cache="true" prefHeight="289.0" prefWidth="500.0" style="-fx-background-color: #386CA4; -fx-background-image: url('file:bck.jpg');" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+         <children>
+            <Button fx:id="checkPassword" layoutX="423.0" layoutY="132.0" mnemonicParsing="false" onAction="#openStorage" prefHeight="25.0" prefWidth="55.0" text="submit">
+         <effect>
+            <DropShadow>
+               <input>
+                  <Reflection />
+               </input>
+            </DropShadow>
+         </effect></Button>
+            <Button layoutX="490.0" layoutY="290.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="55.0" text="close">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+            <PasswordField fx:id="getPassword" layoutX="380.0" layoutY="99.0" onAction="#faceDetection" prefHeight="25.0" prefWidth="139.0" promptText="Enter Pin">
+         <effect>
+            <DropShadow />
+         </effect></PasswordField>
+            <Button layoutX="81.0" layoutY="99.0" mnemonicParsing="false" onAction="#startPy" style="-fx-text-fill: black;" text="Face Detection">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+            <TextField fx:id="veri" alignment="CENTER" editable="false" layoutX="220.0" layoutY="45.0" text="USER NOT VERIFIED" visible="false">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+            <Button fx:id="enterBtn" layoutX="102.0" layoutY="134.0" mnemonicParsing="false" onAction="#openStorageF" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #5189C1;" text="Enter" visible="false" />
+      <MenuBar fx:id="menubar" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #F5EBEB; -fx-text-fill: white;">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-text-fill: white;" text="File">
+            <items>
+              <MenuItem fx:id="acset" mnemonicParsing="false" onAction="#mb" text="Account Setup" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#infoF" text="Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#contactF" text="Contact Us" />
+                  <MenuItem mnemonicParsing="false" onAction="#aboutF" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+         </children>
+      </AnchorPane>

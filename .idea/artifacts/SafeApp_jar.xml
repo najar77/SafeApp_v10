@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SafeApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SafeApp</output-path>
+    <root id="archive" name="SafeApp.jar">
+      <element id="module-output" name="SafeApp" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Crypto/activation.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Crypto/javax.mail.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
